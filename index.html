@@ -14,13 +14,18 @@
     <div class="container">
 
       <form>
-        <div class="form-group">
-          <label class="form-control-label" for="ipaddr">IP address: </label>
-          <input type="text" class="form-control form-control-lg" id="ipaddr" name="ip" placeholder="192.168.21.32">
+        <div class="form-group row">
+          <label class="col-sm-2 col-form-label" for="ipaddr">IP address: </label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control form-control-lg" id="ipaddr" name="ip" placeholder="192.168.21.32">
+          </div>
         </div>
-
-        <input type="button" name="submit_button" value="Convert"
+        <div class="form-group row">
+          <div class="col-sm-10">
+            <input type="button" name="submit_button" value="Convert"
           class="btn btn-primary" onclick="submit_ip()">
+          </div>
+        </div>
       </form>
 
       <div id="result"></div>
