@@ -25,22 +25,38 @@
           </li>
       </div>
     </nav>
+
     <div class="container">
-      <br>
-      <h1>IP to Binary Converter</h1>
-      <br>
-      <p>Enter IP address in dotted decimal format to see its binary equivalent.</p>
 
-      <form class="form-inline">
-        <label class="sr-only" for="ipaddr">IP address: </label>
-        <input type="text" class="form-control form-control-lg mb-2 mr-sm-2 mb-sm-0" id="ipaddr" name="ip" placeholder="192.168.21.32">
-        <input type="button" name="submit_button" value="Convert"
-          class="btn btn-primary btn-lg" onclick="submit_ip()">
-      </form>
+      <div class="p-3 row">
+        <div class="col">
+          <h1 class="text-center">IP to Binary Converter</h1>
+        </div>
+      </div>
 
-      <br>
+      <div class="p-1 row">
+        <div class="col">
+          <p class="text-center">Enter IP address in dotted decimal format to see its binary equivalent.</p>
+        </div>
+      </div>
 
-      <p class="lead" id="result"></p>
+      <div class="p-1 row">
+        <div class="col d-flex justify-content-center">
+          <form class="form-inline">
+            <label class="sr-only" for="ipaddr">IP address: </label>
+            <input type="text" class="form-control form-control-lg mb-2 mr-sm-2 mb-sm-0" id="ipaddr" name="ip" placeholder="192.168.21.32">
+            <input type="button" name="submit_button" value="Convert"
+              class="btn btn-primary btn-lg" onclick="submit_ip()">
+          </form>
+        </div>
+      </div>
+
+      <div class="p-3 row">
+        <div class="col">
+          <p class="lead text-center" id="result"></p>
+        </div>
+      </div>
+
     </div>
 
     <!-- load JS scripts -->
