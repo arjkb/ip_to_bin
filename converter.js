@@ -16,3 +16,13 @@ function submit_ip()  {
   document.getElementById("result").innerHTML=binary.join('.');
 
 }
+
+document.getElementById("ipaddr")
+  .addEventListener("keypress", function(event) {
+    // trigger button click if the enter key (13) is pressed
+    if (event.keyCode == 13)  {
+      event.preventDefault();
+      document.getElementsByName("submit_button")[0].click();
+    }
+  }
+)
